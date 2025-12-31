@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FOOD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqUbLcY2TI7ov5acabwSJHuQ_WVgHiTBka1A&s");
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
+    }
+    header h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .card h3 {
+      margin: 12px 0;
+      color: green;
+    }
+    .card p {
+      padding: 0 12px 20px;
+      font-size: 14px;
+      color: black;
+    }
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Himachalli Food</h1>
+    <p>Explore the rich flavors of the Himalayas</p>
+  </header>
+
+  <div class="gallery">
+    <div class="card">
+      <img src="https://www.holidify.com/images/cmsuploads/compressed/57551921_2301707306531534_946636123755511808_o_20200417125340.jpg" alt="Dham">
+      <h3>Dham</h3>
+      <p>A festive platter of rice, dal, rajma, curd, and boor ki kari.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.indianexpress.com/2020/07/Naggar-food-1.jpg" alt="Siddu">
+      <h3>Siddu</h3>
+      <p>Steamed wheat bread stuffed with spiced lentils, served with ghee and chutney.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/BCvPO_4YH1E/hq720.jpg" alt="Chana Madra">
+      <h3>Chana Madra</h3>
+      <p>Chickpeas cooked in a yogurt-based gravy with aromatic spices.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjn_dGJO30C2Oo33sSdEvNV8q5rykDe0bprA&s" alt="Babru">
+      <h3>Babru</h3>
+      <p>Stuffed kachori made with black gram paste, deep-fried until crispy.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ8dFWl_vxOh1z31pHFOqWOGAARzNcRhEcPA&s" alt="Aktori">
+      <h3>Aktori</h3>
+      <p>A pancake made with buckwheat flour, popular in festive occasions.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://rakkh.com/patrika/wp-content/uploads/2022/05/tudkiya-bhath-recipe-main-photo.jpg" alt="Tudkiya Bhat">
+      <h3>Tudkiya Bhat</h3>
+      <p>Spiced rice cooked with lentils, potatoes, and yogurt for a tangy flavor.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://static.toiimg.com/thumb/71647687.cms?width=1200&height=900" alt="Mittha">
+      <h3>Mittha</h3>
+      <p>A sweet dish made of rice, dry fruits, and sugar, served during celebrations.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://himalayasdigital.com/wp-content/uploads/2025/07/Bhey-HimalayasDigital-HimachalPrades_converted-1024x678.webp" alt="Bhey">
+      <h3>Bhey</h3>
+      <p>Lotus stem cooked with gram flour and spices, a crunchy delicacy.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p> Himachalli Food</p>
+  </footer>
+</body>
+</html>

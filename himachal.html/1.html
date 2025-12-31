@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Himachal Temples Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+     font-family: 'Roboto', sans-serif;
+      background-image: url('https://png.pngtree.com/png-clipart/20250123/original/pngtree-vibrant-indian-temple-artwork-with-palms-png-image_19679718.png');
+     background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+    }
+ h1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+     font-size: 3em;
+      margin-top: 40px;
+    color: #ffeaa7;
+      text-shadow: 2px 2px 5px #000;
+    }
+ .image {
+      width: 85%;
+     margin: 60px auto;
+      display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      animation: fadeIn 2s ease-in;
+    }
+
+   .image a {
+    position: relative;
+      overflow: hidden;
+    border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .image img {
+      width: 100%;
+      height: 200px;
+    object-fit: cover;
+      border-radius: 15px;
+    transition: transform 0.8s ease, filter 0.5s ease;
+    }
+
+    .image a:hover img {
+      transform: scale(1.2);
+    filter: brightness(1.2);
+      box-shadow: 0 0 20px #ffd700;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Temples of Himachal Pradesh</h1>
+  <div class="image">
+    <a href="l">
+      <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2023/11/Chintpurni-Temple-Himachal-Pradesh.jpg?fit=1024%2C576&ssl=1" alt="CHINTPURNI TEMPLE">
+    </a>
+    <a href="#">
+      <img src="https://lakesinhimachal.com/wp-content/uploads/2023/03/hadimba-temple-manali-1024x576.png.webp" alt="Hadimba Temple">
+    </a>
+    <a href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwy5b4xj0QvBiRf7Eng2OjAVKsqi3hWqGRxQ&s" alt="Kullu-Manali">
+    </a>
+    <a href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQDU6CQyxNdq2-XuPgxFUATsYAN2ZDdZ9eyw&s" alt="Naina Devi">
+    </a>
+    <a href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkX9-CiAG7tg4sbmsYnE0gUWjPTP1CBzRDmA&s" alt="Chamunda Devi">
+    </a>
+    <a href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXAzfeHp6bCQf4jDW_lJrvvj8N74YoJVQf2yLi0sypMwoDve9pXH0QLn_i8YTuXlMmG4o&usqp=CAU" alt="Masroor Rock-cut Temples">
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shimla Explorer</title>
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://images.pexels.com/photos/3574440/pexels-photo-3574440.jpeg?cs=srgb&dl=pexels-shalenderkumar-3574440.jpg&fm=jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .shimla {
+      font-family: "Nosifer", sans-serif;
+      font-size: 100px;
+      text-align: center;
+      margin-bottom: 40px;
+      background: linear-gradient(to right, #a5d8ff, #91a7ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      animation: shimmer 3s infinite linear;
+    }
+
+    @keyframes shimmer {
+      0% { text-shadow: 0 0 10px #fff0f0; }
+      50% { text-shadow: 0 0 20px #f5e8e8; }
+      100% { text-shadow: 0 0 10px #f1e6e6; }
+    }
+
+    .shimla-description {
+      max-width: 800px;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 20px;
+      line-height: 1.6;
+      background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.4));
+      padding: 25px 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .flex-item {
+      background: linear-gradient(135deg, #d1c4c4, #514c4c);
+      padding: 25px;
+      border-radius: 15px;
+      width: 180px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .flex-item a {
+      color: #f5f5f5;
+      text-decoration: none;
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    .flex-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    }
+
+    .flex-item:hover a {
+      color: #ffd700;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .shimla {
+        font-size: 60px;
+      }
+      .flex-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+   
+
+  </style>
+</head>
+<body>
+
+  <p class="shimla">SHIMLA</p>
+
+  <div class="shimla-description">
+    <p>
+      Perched in the Himalayas, <strong>Shimla</strong> is a charming hill station known for its colonial architecture, pine forests, and panoramic views. Once the summer capital of British India, it now welcomes travelers with its cool climate, vibrant bazaars, and scenic trails. Whether you're sipping chai on Mall Road or hiking to Jakhu Temple, Shimla offers a perfect blend of history, nature, and adventure.
+    </p>
+  </div>
+
+  <div class="flex-container">
+    <div class="flex-item">
+      <a href="https://www.hptdc.in/index.php/destination/shimla/">🏞️ Attractions</a>
+    </div>
+    <div class="flex-item">
+      <a href="https://www.tripadvisor.in/Restaurants-g304552-Shimla_Shimla_District_Himachal_Pradesh.html">🍽️ Food & Dining</a>
+    </div>
+    <div class="flex-item">
+      <a href="https://www.irctc.co.in/nget/train-search">🚆 Train Info</a>
+    </div>
+    <div class="flex-item">
+      <a href="https://www.google.com/maps/place/Shimla,+Himachal+Pradesh/">🗺️ Map</a>
+    </div>
+    <div class="flex-item">
+      <a href="https://www.booking.com/city/in/simla.en.html">🏨 Booking</a>
+    </div>
+    <div class="flex-item">
+      <a href="https://www.makemytrip.com/car-rental/shimla-city-cabs.html">🚗 Transport</a>
+    </div>
+  </div>
+
+
+</body>
+</html>
